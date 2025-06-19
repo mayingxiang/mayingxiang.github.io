@@ -1,0 +1,278 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   CUSTOM STYLES - Clean version without hover issues
+   ========================================================================== */
+
+/* Override the default max-width to make content wider */
+$max-width: 1400px !default;
+
+/* Make sidebar wider and add spacing */
+.sidebar {
+  @include breakpoint($large) {
+    float: left;
+    width: 320px;
+    padding-right: 0;
+    z-index: 10;
+    
+    &.sticky {
+      @include clearfix();
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      
+      > * {
+        padding-right: 2em;
+      }
+    }
+  }
+  
+  @include breakpoint($x-large) {
+    width: 380px;
+  }
+}
+
+/* Adjust page layout when sidebar is present */
+.page {
+  @include breakpoint($large) {
+    float: right;
+    width: calc(100% - 320px);
+    padding-left: 3em;
+    padding-right: 0;
+  }
+  
+  @include breakpoint($x-large) {
+    width: calc(100% - 380px);
+    padding-left: 4em;
+  }
+}
+
+/* Ensure archive pages also get proper spacing */
+.archive {
+  @include breakpoint($large) {
+    float: right;
+    width: calc(100% - 320px);
+    padding-left: 3em;
+    padding-right: 0;
+  }
+  
+  @include breakpoint($x-large) {
+    width: calc(100% - 380px);
+    padding-left: 4em;
+  }
+}
+
+/* Make the overall page wrapper wider */
+.page__inner-wrap {
+  @include breakpoint($max-width) {
+    max-width: $max-width;
+  }
+}
+
+/* Fix footer to span full width */
+.page__footer {
+  width: 100%;
+  margin: 0;
+  
+  footer {
+    @include breakpoint($large) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}
+
+/* Ensure masthead spans full width */
+.masthead {
+  .masthead__inner-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+    
+    @include breakpoint($large) {
+      padding: 0 2em;
+    }
+    
+    @include breakpoint($x-large) {
+      max-width: $max-width;
+      padding: 0 2em;
+    }
+  }
+}
+
+/* Make navigation bar slightly taller */
+.masthead {
+  padding: 0.5em 0;
+  
+  &__inner-wrap {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+  }
+  
+  &__menu {
+    .greedy-nav {
+      a {
+        padding: 0.5em 1.5em;
+        
+        @include breakpoint($large) {
+          padding: 0.6em 1.5em;
+        }
+      }
+    }
+  }
+}
+
+/* Site title styling */
+.site-title {
+  padding: 0.25em 0;
+  font-size: 0.95em !important;
+  font-weight: 600;
+  
+  @include breakpoint($large) {
+    font-size: 1em !important;
+  }
+}
+
+/* Make site title blue */
+.masthead {
+  .site-title,
+  .site-title a {
+    color: #1e4d8e !important;
+  }
+}
+
+/* Make navigation font smaller */
+.greedy-nav {
+  a {
+    font-size: 0.8em;
+    
+    @include breakpoint($large) {
+      font-size: 0.85em;
+    }
+  }
+}
+
+/* Make main body content font smaller */
+.page__content {
+  font-size: 0.95em;
+  
+  @include breakpoint($large) {
+    font-size: 0.975em;
+  }
+}
+
+/* Hide the RSS feed link */
+.feed-icons {
+  display: none !important;
+}
+
+/* Ensure author profile has no hover effects */
+.author__avatar {
+  * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+  }
+  
+  img {
+    opacity: 1 !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    transform: none !important;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    box-shadow: none !important;
+  }
+  
+  a {
+    cursor: default !important;
+    pointer-events: none !important;
+    text-decoration: none !important;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1 !important;
+      transform: none !important;
+      outline: none !important;
+    }
+  }
+  
+  a:hover img,
+  a:focus img,
+  a:active img {
+    opacity: 1 !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+/* Extra specific selectors to override theme */
+.sidebar .author__avatar img,
+.sidebar .author__avatar a,
+.sidebar .author__avatar a:hover,
+.sidebar .author__avatar a:hover img {
+  opacity: 1 !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* Disable ALL transitions on sidebar images */
+.sidebar img {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+}
+
+.author__name {
+  color: #212529 !important;  /* Darker color for name */
+  font-size: 1.25em !important;  /* Slightly smaller name */
+  margin-bottom: 0.5em !important;
+}
+
+/* Make author avatar larger */
+.author__avatar {
+  img {
+    max-width: 140px !important;
+    border-radius: 50% !important;
+  }
+}
+
+/* Make author bio text larger */
+.author__bio {
+  font-size: 1.05em !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1em !important;
+}
+
+/* Make author links larger */
+.author__urls {
+  font-size: 1em !important;
+  
+  a {
+    padding: 0.4em 0 !important;
+    font-size: 0.95em !important;
+  }
+}
+
+/* Remove footer gray bar */
+.page__footer {
+  display: none !important;
+}

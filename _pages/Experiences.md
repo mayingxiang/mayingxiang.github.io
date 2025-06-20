@@ -19,7 +19,7 @@ title: "Experiences"
 
 &nbsp;
 
-## 👥 Leadership Experience
+## 👥 Leadership
 
 • **President**, Graduate Student Association, CPBP @ VU 
 

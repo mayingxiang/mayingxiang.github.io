@@ -6,15 +6,14 @@ layout: single
 author_profile: true
 ---
 
-I am a Ph.D. candidate in the [Department of Molecular Physiology and Biophysics](https://medschool.vanderbilt.edu/mpb/) at **Vanderbilt University**, working under the mentorship of [Dr. Hassane Mchaourab](https://www.vanderbilt.edu/ai-proteindynamics/).
 
-### 🔬 Research Focus
-My research lies at the intersection of **structural biology** and **machine learning**, where I develop innovative methods to: 
-
+I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaourab-lab/),Vanderbilt University, working under the mentorship of [Dr. Hassane Mchaourab](https://www.vanderbilt.edu/ai-proteindynamics/). My research lies at the intersection of **structural biology** and **machine learning**, where I develop innovative methods to:
+ 
 &nbsp;&nbsp;🧬 Understand protein dynamics and conformational changes. 
 
 &nbsp;&nbsp;📊 Interpret spectroscopy data using deep learning.
 
+&nbsp;
 ### 🎓 Education
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -46,22 +45,10 @@ My research lies at the intersection of **structural biology** and **machine lea
   <img src="/assets/images/UMN.png" alt="University of Minnesota" style="width: 80px; margin-right: 20px;">
   <div>
     <strong>Exchange Student</strong><br>
-    University of Minnesota, Minneapolis, MN<br>
+    University of Minnesota, Morris, MN<br>
     <em>Fall 2019</em>
   </div>
 </div>
-
-### 👥 Leadership Experience
-
-• **President**, Graduate Student Association, CPBP @ VU 
-
-• **Chair of Social Activities**, Graduate Student Association, CPBP @ VU
-
-• **Representative**, Student Council, Data Science Institute @ VU
-
-• **President**, Morris Karaoke Club, University of Minnesota
-
-• **Chair of Student Activities**, Students' Union, School of Mathematics @ CNU
 
 
 

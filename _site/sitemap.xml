@@ -29,6 +29,9 @@
 <lastmod>2019-04-18T14:34:30-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Experiences/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/Presentations/</loc>
 </url>
 <url>
@@ -36,9 +39,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/Publications/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/Teaching/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>

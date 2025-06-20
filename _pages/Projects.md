@@ -3,17 +3,25 @@ permalink: /Projects/
 title: "Projects"
 ---
 
-## DEERTransformer: AI for Protein Spectroscopy
-I'm developing a transformer-based approach to interpret DEER (Double Electron-Electron Resonance) spectroscopy data. This project bridges machine learning and structural biology, helping researchers better understand protein dynamics and conformational changes.
+## [Data Science for Social Good](https://www.vanderbilt.edu/datascience/data-science-for-social-good/)
+**Intern, Data Science Institute @ VU**
+- Developed a transformer model for style transfer and text generation to help craft tonally correct, culturally aligned, and professional emails in English.
+- Designed an academic coaching tool that breaks large projects into manageable tasks, organizes assignments and provides strategic homework partitioning recommendations.
 
-## Spatial Transcriptomics Analysis
-Created a novel cell clustering method using autoencoders for spatially resolved transcriptomics data. The tool leverages spatial information to improve data quality and helps identify differentially expressed genes in tissue samples.
+## [Cell Clustering Tool for Spatial Transcriptomics Data](https://maiziezhoulab.github.io/)
+**Research Assistant, Maizie Zhou Lab @ VU**
+- Developed a cell clustering method using autoencoder for spatially resolved transcriptomics data.
+- Leveraged spatial information to impute dropout events in single-cell RNA sequencing data.
+- Identified differentially expressed genes and conducted Gene Ontology term enrichment analysis.
 
-## Academic Email Assistant
-During my Data Science for Social Good internship, I built a transformer model that helps international students write professional emails. The system performs style transfer to ensure messages are culturally appropriate and professionally toned.
+## Covid-19 Case Prediction Model
+**Research Assistant, Guohua Zou Lab @ CNU**
+- Built regression models to forecast COVID-19 outbreak patterns through cumulative case prediction and parameter estimation methods.
 
-## ML-Powered Investment Strategies
-Led a team project applying machine learning to predict factor performance in financial markets. We developed conviction-weighted portfolios using probability scores from our models to optimize investment strategies.
+## Galois, Dessins D'enfant and Roots of Polynomials
+**Research Assistant, Jilong Tong Lab @ CNU**
+- Identified Galois groups through quintic equation coefficients and investigated Dessins D'enfant mathematical structures.
 
-## COVID-19 Prediction Modeling
-Early in the pandemic, I worked with Professor Guohua Zou to develop regression models for predicting COVID-19 outbreak patterns, contributing to public health planning efforts in China.
+## The Intelligent Building System
+**Intern, Chinese Academy of Sciences**
+- Contributed to front-end web development for an intelligent temperature control system providing real-time building temperature and energy consumption insights.

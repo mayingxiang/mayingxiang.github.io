@@ -8,7 +8,7 @@ author_profile: true
 
 
 I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaourab-lab/),Vanderbilt University, working under the mentorship of [Dr. Hassane Mchaourab](https://www.vanderbilt.edu/ai-proteindynamics/). My research lies at the intersection of **structural biology** and **machine learning**, where I develop innovative methods to:
- 
+
 &nbsp;&nbsp;🧬 Understand protein dynamics and conformational changes. 
 
 &nbsp;&nbsp;📊 Interpret spectroscopy data using deep learning.
@@ -40,9 +40,8 @@ I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaour
     Capital Normal University, Beijing, China<br>
   </div>
 </div>
-
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/UMN.png" alt="University of Minnesota" style="width: 80px; margin-right: 20px;">
+  <img src="/assets/images/UMN.jpeg" alt="University of Minnesota" style="width: 80px; margin-right: 20px;">
   <div>
     <strong>Exchange Student</strong><br>
     University of Minnesota, Morris, MN<br>

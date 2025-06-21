@@ -5,7 +5,7 @@ title: "Experiences"
 
 &nbsp;
 
-## 🎓 Teaching
+## 👨🏻‍🏫 Teaching
 
 • **Lecturer**, [Biomedical and Computational Discovery Experience](http://biocodevu.com/), Center for AI in Protein Dynamics @ VU
 

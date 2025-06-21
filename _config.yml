@@ -64,7 +64,7 @@ plugins:
 author:
   name   : "Andy Ma 马英翔"
   avatar : "/assets/images/bio-photo.jpeg"
-  bio    : "PhD Candidate in the Department of Molecular Physiology & Biophysics @ VU"
+  bio    : "PhD Candidate in the Department of Molecular Physiology & Biophysics"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

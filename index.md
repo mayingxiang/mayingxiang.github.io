@@ -7,11 +7,11 @@ author_profile: true
 ---
 
 
-I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaourab-lab/),Vanderbilt University, working under the mentorship of [Dr. Hassane Mchaourab](https://www.vanderbilt.edu/ai-proteindynamics/). My research lies at the intersection of **structural biology** and **machine learning**, where I develop innovative methods to:
+I am a Ph.D. candidate in the [Walker Lab](https://lab.vanderbilt.edu/walker-lab/), Vanderbilt University, working under the mentorship of Dr. Allison Walker. My research lies at the intersection of **Protein Language Models** and **Evolution**, where I develop innovative methods to:
 
-&nbsp;&nbsp;🧬 Understand protein dynamics and conformational changes. 
+&nbsp;&nbsp;🧬 Predict the activity of natural products and discover novel bioactive molecules from genomic data. 
 
-&nbsp;&nbsp;📊 Interpret spectroscopy data using deep learning.
+&nbsp;&nbsp;📊 Leverage evolutionary patterns and deep learning architectures to decode the functional landscape of complex protein systems.
 
 &nbsp;
 ### 🎓 Education
@@ -19,7 +19,7 @@ I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaour
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="/assets/images/vanderbilt.jpeg" alt="Vanderbilt University" style="width: 80px; margin-right: 20px;">
   <div>
-    <strong>Ph.D. in Chemical and Physical Biology</strong><br>
+    <strong>Ph.D. in Biological Sciences</strong><br>
     Vanderbilt University, Nashville, TN<br>
     <em>Expected: May 2028 </em>
   </div>

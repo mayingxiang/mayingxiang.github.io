@@ -7,47 +7,31 @@ author_profile: true
 ---
 
 
-I am a Ph.D. candidate in the [Mchaourab Lab](https://lab.vanderbilt.edu/mchaourab-lab/),Vanderbilt University, working under the mentorship of [Dr. Hassane Mchaourab](https://www.vanderbilt.edu/ai-proteindynamics/). My research lies at the intersection of **structural biology** and **machine learning**, where I develop innovative methods to:
-
-&nbsp;&nbsp;🧬 Understand protein dynamics and conformational changes. 
-
-&nbsp;&nbsp;📊 Interpret spectroscopy data using deep learning.
+I am a Ph.D. candidate in the [Walker Lab](https://lab.vanderbilt.edu/walker-lab/),Vanderbilt University, working under the mentorship of Dr. Allison Walker. My research lies at the intersection of **protein language models** and **evolution**.
 
 &nbsp;
 ### 🎓 Education
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/vanderbilt.jpeg" alt="Vanderbilt University" style="width: 80px; margin-right: 20px;">
-  <div>
-    <strong>Ph.D. in Chemical and Physical Biology</strong><br>
-    Vanderbilt University, Nashville, TN<br>
-    <em>Expected: May 2028 </em>
-  </div>
-</div>
+<img src="/assets/images/vanderbilt.jpeg" alt="Vanderbilt University" width="80">
+**Ph.D. in Biological Sciences**<br>
+Vanderbilt University, Nashville, TN<br>
+*Expected: May 2028*
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/vanderbilt.jpeg" alt="Vanderbilt University" style="width: 80px; margin-right: 20px;">
-  <div>
-    <strong>Master of Science in Data Science</strong><br>
-    Vanderbilt University, Nashville, TN<br>
-  </div>
-</div>
+<br>
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/CNU.png" alt="Capital Normal University" style="width: 80px; margin-right: 20px;">
-  <div>
-    <strong>Bachelor of Science in Statistics</strong><br>
-    Capital Normal University, Beijing, China<br>
-  </div>
-</div>
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/UMN.jpeg" alt="University of Minnesota" style="width: 80px; margin-right: 20px;">
-  <div>
-    <strong>Exchange Student</strong><br>
-    University of Minnesota, Morris, MN<br>
-    <em>Fall 2019</em>
-  </div>
-</div>
+<img src="/assets/images/vanderbilt.jpeg" alt="Vanderbilt University" width="80">
+**Master of Science in Data Science**<br>
+Vanderbilt University, Nashville, TN<br>
 
+<br>
 
+<img src="/assets/images/CNU.png" alt="Capital Normal University" width="80">
+**Bachelor of Science in Statistics**<br>
+Capital Normal University, Beijing, China<br>
 
+<br>
+
+<img src="/assets/images/UMN.jpeg" alt="University of Minnesota" width="80">
+**Exchange Student**<br>
+University of Minnesota, Morris, MN<br>
+*Fall 2019*

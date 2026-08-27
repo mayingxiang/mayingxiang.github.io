@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DEERTransformer &mdash; Interactive Demo</title>
+<title>DEERTransformer Interactive Demo</title>
 <meta name="author" content="Yingxiang Ma">
 <meta name="description" content="An interactive walkthrough of DEERTransformer: pick a DEER time-domain trace and compare the transformer's distance distribution against Gaussian fitting and DEERNet.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,9 +135,9 @@
   <p>Double electron&ndash;electron resonance (DEER) measures the dipolar coupling between two spin labels
   attached to a protein. The instrument returns a decaying, oscillating time-domain trace; what a
   structural biologist actually wants is <em>P(r)</em>, the distribution of distances between the two labels.
-  Recovering <em>P(r)</em> from the trace is an ill-posed inverse problem, and the usual answers, fitting a
-  small sum of Gaussians or Tikhonov regularisation, require the user to commit up front to how many
-  populations there are or how smooth the answer should be.</p>
+  Recovering <em>P(r)</em> from the trace is an ill-posed inverse problem. The usual answers are to fit a
+  small sum of Gaussians, or to apply Tikhonov regularisation. Both require the user to decide up front how
+  many populations there are, or how smooth the answer should be.</p>
 
   <p><strong>DEERTransformer</strong> is an encoder&ndash;decoder transformer that learns the inversion directly
   from 1.5&nbsp;million simulated traces. It takes the raw complex trace and emits a 256-bin distribution over
@@ -146,7 +146,7 @@
   <section>
     <h2><span class="step">1</span>Pick a DEER trace</h2>
     <p class="lede">Eight ground-truth distributions from the standard DEER benchmark, chosen to span the
-    range of shapes &mdash; sharp single populations, overlapping pairs, broad and multi-modal cases &mdash; and
+    range of shapes, from sharp single populations to overlapping pairs and broad multi-modal cases, and
     to include samples that each method handles best. Each was measured twice: once nearly noise-free, once at
     realistic experimental noise. These are selected case studies rather than a random sample.</p>
 
@@ -163,8 +163,8 @@
 
   <section>
     <h2><span class="step">2</span>Run the inference</h2>
-    <p class="lede">The transformer sees four channels per time point &mdash; the real and imaginary parts of the
-    signal plus two normalised time encodings &mdash; and decodes against 256 distance queries.</p>
+    <p class="lede">The transformer sees four channels per time point: the real and imaginary parts of the
+    signal, plus two normalised time encodings. It decodes those against 256 distance queries.</p>
 
     <div class="runbar">
       <button class="runbtn" id="runBtn" type="button">Run inference</button>
@@ -176,14 +176,14 @@
     <div id="results" hidden>
       <div class="panels">
         <div class="panel">
-          <h3>Time domain &mdash; what the instrument measured</h3>
+          <h3>Time domain: what the instrument measured</h3>
           <p class="sub" id="timeSub"></p>
           <svg id="timeChart" viewBox="0 0 600 260" role="img" aria-label="DEER time-domain trace with the trace each recovered distribution predicts"></svg>
           <p class="sub resid-lb">Residual, fit &minus; data <span id="residScale"></span></p>
           <svg id="residChart" viewBox="0 0 600 150" role="img" aria-label="Residuals between each fitted trace and the measured data"></svg>
         </div>
         <div class="panel">
-          <h3>Distance domain &mdash; what each method recovered
+          <h3>Distance domain: what each method recovered
             <button type="button" class="zoombtn" id="zoomBtn" aria-pressed="false">y-axis &times;1</button>
           </h3>
           <p class="sub" id="distSub"></p>
@@ -192,7 +192,7 @@
       </div>
 
       <p class="lede" style="margin-top:16px">This is the whole difficulty of DEER in one picture. All three
-      fits sit inside the noise of the measured trace &mdash; the time domain cannot tell them apart &mdash; yet
+      fits sit inside the noise of the measured trace, so the time domain cannot tell them apart, yet
       they disagree about where the distance populations are. Which answer you get depends on what each method
       assumes, not on the data alone.</p>
 
@@ -212,7 +212,7 @@
       <p class="lede" style="margin-top:10px">Earth mover&rsquo;s distance measures how far probability mass has
       to travel to turn one distribution into the other, in &Aring;ngstr&ouml;ms. Lower is better. It punishes
       mass placed in the wrong region much harder than a slightly mis-shaped peak, so a method can look almost
-      perfect on this plot and still score badly &mdash; step the distance plot&rsquo;s
+      perfect on this plot and still score badly. Step the distance plot&rsquo;s
       <em>y-axis</em> up to &times;200 to see the small spurious populations that drive most of the difference.</p>
     </div>
   </section>
@@ -225,7 +225,7 @@
   Gaussian fitting, 0.197 and 0.337 for DEERTransformer, and 0.282 and 0.477 for DEERNet.</p>
 
   <footer>
-    Data and model from the DEERTransformer manuscript (in preparation) &mdash; Y.&nbsp;Ma, D.&nbsp;Alamo,
+    Data and model from the DEERTransformer manuscript (in preparation). Y.&nbsp;Ma, D.&nbsp;Alamo,
     R.&nbsp;Stein, Y.&nbsp;Guo, H.&nbsp;Mchaourab. &nbsp;
     <a href="index.html">Back to homepage</a>.
   </footer>
@@ -449,7 +449,7 @@
 
     $("timeSub").textContent = "Sample #" + c.sample + ", " +
       (noise === "low" ? "low noise" : "high noise") +
-      " — grey is the measurement, each coloured line is the trace its recovered distribution would produce.";
+      ". Grey is the measurement, each coloured line is the trace its recovered distribution would produce.";
     $("distSub").textContent = c.blurb;
 
     var tSeries = [{
@@ -585,7 +585,7 @@
     .catch(function(){
       $("placeholder").innerHTML =
         "Could not load the demo data. If you opened this file directly from disk, " +
-        "serve the folder over HTTP instead &mdash; e.g. <code>python3 -m http.server</code> &mdash; " +
+        "serve the folder over HTTP instead, e.g. <code>python3 -m http.server</code>, " +
         "and reload.";
       $("runBtn").disabled = true;
     });

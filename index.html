@@ -39,11 +39,15 @@
   .pub .authors{ font-size:.96rem; }
   .pub .authors strong{ color:#000; }
   .pub .venue{ font-style:italic; color:var(--muted); font-size:.94rem; }
-  .pub .plinks{ font-size:.9rem; margin-top:1px; }
-  .pub .desc{ font-size:.92rem; color:#585858; margin-top:5px; }
-  .teaching p{ margin:0 0 9px; }
-  .teaching .role{ font-weight:700; }
-  .teaching .course{ display:block; padding-left:16px; color:var(--text); font-size:.95rem; margin-top:2px; }
+  .teaching .teaching-intro{ margin:0 0 22px; color:#585858; font-size:.95rem; }
+  .teaching h2{ border-bottom:0; padding-bottom:0; }
+  .teaching-list{ list-style:none; margin:0; padding:0; }
+  .teaching-entry{ display:grid; grid-template-columns:130px minmax(0,1fr); gap:22px;
+                   padding:18px 0; }
+  .teaching-entry:first-child{ padding-top:0; }
+  .teaching .role{ margin:2px 0 0; color:var(--muted); font-size:.86rem; line-height:1.5; }
+  .teaching h3{ font-size:1rem; line-height:1.5; font-weight:700; margin:0 0 4px; }
+  .teaching .unit{ margin:0; color:#585858; font-size:.88rem; line-height:1.6; }
   footer{ margin-top:48px; padding-top:14px; border-top:1px solid #ececec; color:#a2a2a2; font-size:.84rem; }
   footer a{ color:#a2a2a2; text-decoration:underline; }
   @media (max-width:680px){
@@ -53,6 +57,10 @@
     .pub{ flex-direction:column; gap:10px; }
     .pub .thumb{ flex:0 0 auto; width:100%; }
     .pub .thumb svg{ width:100%; height:auto; }
+  }
+  @media (max-width:480px){
+    .teaching-entry{ grid-template-columns:1fr; gap:6px; }
+    .teaching .role{ margin-top:0; }
   }
 </style>
 </head>
@@ -91,12 +99,17 @@
 
     <div class="pub">
       <div class="meta">
-        <span class="title"><a href="deertransformer.html">DEERTransformer: A Transformer-Based Approach for Enhanced DEER Spectroscopy Interpretation</a></span>
+        <span class="title">Contact-gated Jacobians identify functionally coupled residues in proteins</span>
+        <div class="authors"><strong>Y. Ma</strong>, A. Walker</div>
+        <div class="venue">Manuscript in preparation</div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="meta">
+        <span class="title"><a href="deertransformer-overview.html">DEERTransformer: A Transformer-Based Approach for Enhanced DEER Spectroscopy Interpretation</a></span>
         <div class="authors"><strong>Y. Ma</strong>, D. Alamo, R. Stein, Y. Guo, H. Mchaourab</div>
         <div class="venue">Manuscript prepared for submission</div>
-        <div class="plinks"><a href="deertransformer.html">interactive demo</a></div>
-        <div class="desc">A transformer model that maps spin-label DEER measurements to protein backbone
-        distance distributions, improving the interpretation of conformational data.</div>
       </div>
     </div>
 
@@ -105,7 +118,6 @@
         <span class="title">Chemical biology in the age of artificial intelligence: from ligand discovery to virtual cells</span>
         <div class="authors">X. Guo, <strong>Y. Ma</strong>, J. McDaniel, S. Vadlamudi, C. M. Butt, M. Fieldhouse, C. M. Rava, A. Walker</div>
         <div class="venue">Submitted to ACS Chemical Biology</div>
-        <div class="desc">How artificial intelligence is reshaping chemical biology, from ligand discovery to virtual cells.</div>
       </div>
     </div>
 
@@ -114,8 +126,6 @@
         <span class="title"><a href="https://www.sciencedirect.com/science/article/pii/S2589004223008696">ADEPT: Autoencoder with Differentially Expressed Genes and Imputation for Robust Spatial Transcriptomics Clustering</a></span>
         <div class="authors">Y. Hu, Y. Zhao, C. Schunk, <strong>Y. Ma</strong>, T. Derr, X. Zhou</div>
         <div class="venue">iScience 26(6), 106792 (2023)</div>
-        <div class="desc">An autoencoder framework that uses differentially expressed genes and imputation to
-        produce robust clustering of spatially resolved transcriptomics data.</div>
       </div>
     </div>
 
@@ -124,22 +134,48 @@
         <span class="title"><a href="https://arxiv.org/abs/2407.21037">An Application of Large Language Models to Coding Negotiation Transcripts</a></span>
         <div class="authors">R. Friedman, J. Cho, J. Brett, X. Zhan, N. Han, S. Kannan, <strong>Y. Ma</strong>, J. Spencer-Smith, et al.</div>
         <div class="venue">arXiv:2407.21037 (2024)</div>
-        <div class="desc">Large language models applied to coding negotiation transcripts, developed by the Vanderbilt AI Negotiation Lab.</div>
       </div>
     </div>
 
   </section>
 
-  <section class="teaching">
-    <h2>Teaching</h2>
-    <p><span class="role">Lecturer</span>, <a href="http://biocodevu.com/">Biomedical and Computational Discovery Experience</a>, Center for AI in Protein Dynamics @ Vanderbilt University</p>
-    <p><span class="role">Teaching Assistant</span> @ Vanderbilt University
-    <span class="course">Survey of Data Science Applications &amp; Data Management Systems, Data Science Institute</span>
-    <span class="course">BSCI 1511L: Introduction to Biological Sciences Laboratory, Department of Biological Sciences</span></p>
+  <section class="teaching" id="teaching" aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading">Teaching</h2>
+    <p class="teaching-intro">Lecturing and teaching assistant experience at Vanderbilt University, spanning data science and biological sciences.</p>
+    <ul class="teaching-list">
+      <li class="teaching-entry">
+        <p class="role">Lecturer</p>
+        <div>
+          <h3><a href="http://biocodevu.com/">Biomedical and Computational Discovery Experience (BioCode)</a></h3>
+          <p class="unit">Center for AI in Protein Dynamics</p>
+        </div>
+      </li>
+      <li class="teaching-entry">
+        <p class="role">Teaching Assistant</p>
+        <div>
+          <h3>Survey of Data Science Applications</h3>
+          <p class="unit">Data Science Institute</p>
+        </div>
+      </li>
+      <li class="teaching-entry">
+        <p class="role">Teaching Assistant</p>
+        <div>
+          <h3>Data Management Systems</h3>
+          <p class="unit">Data Science Institute</p>
+        </div>
+      </li>
+      <li class="teaching-entry">
+        <p class="role">Teaching Assistant</p>
+        <div>
+          <h3>BSCI 1511L: Introduction to Biological Sciences Laboratory</h3>
+          <p class="unit">Department of Biological Sciences</p>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <footer>
-    Last updated June 2026. &nbsp; Design adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+    Last updated September 2026. &nbsp; Design adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
   </footer>
 
 </div>
